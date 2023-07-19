@@ -1,0 +1,129 @@
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.container{
+	width:90%;
+	margin:0 auto;
+}
+.row{
+	display:flex;
+	flex-wrap:wrap;
+}
+.col{
+	width:50%;
+	padding:10px 20px;
+	padding-right:20px 20px;
+	
+}
+.head{
+	text-align:center;
+	padding:2px;
+	position:relative;
+	
+}
+h2{
+	font-family:arial;
+	font-size:40px;
+}
+.card{
+	padding:20px 20px;
+	display:flex;
+	align-items:center;
+	background-color:1px gray;
+	position:relative;
+	top:0;
+	left:2px;
+	
+	
+	
+	
+}
+.card .icon{
+	
+	
+	
+	/* align-items:center; */
+	/* justify-content:center; */
+	/* display:flex; */
+	font-size:50px;
+	position:relative;
+}
+.icon::after{
+	content:"";
+	position:absolute;
+	bottom:2px;
+	right:-10px;
+	background-color:pink;
+    width:30px;
+	height:30px;
+	border-radius:50%;
+    border-color:solid white;
+	z-index:-1;
+
+}
+
+.edit{
+	padding-left:30px;
+	
+}
+h3{
+	font-size:25px;
+}
+p{
+	padding:5px 0;
+	
+}
+h2::before{
+	content:"";
+	width:5%;
+	height:3px;
+	background-color:red;
+	display:inline-block;
+	position:absolute;
+	top:30%;
+	right:56%
+	
+	
+	
+	
+	
+}
+h2::after{
+	content:"";
+	width:5%;
+	height:3px;
+	background-color:red;
+	display:inline-block;
+	position:absolute;
+	top:30%;
+	
+	
+	
+}
+.card::before{
+	content:"";
+	width:10%;
+	height:2px;
+	background-color:red;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	left:0;
+	
+}
+
+.card::after{
+	content:"";
+	width:70%;
+	height:2px;
+	background-color:gray;
+	display:inline-block;
+	position:absolute;
+	top:0;
+	right:18%;
+	
+}
+
